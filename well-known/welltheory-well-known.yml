@@ -1,0 +1,37 @@
+generated: '2026-07-21'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for the WellTheory
+  website and API hosts. Status is the HTTP code observed at fetch time. No
+  well-known documents are published (all 404); the root llms.txt on
+  www.welltheory.com returned 200 and is saved verbatim at
+  llms/welltheory-llms.txt. api.welltheory.com resolves but serves a private
+  backend (404 on discovery paths, 401 on /docs); docs.welltheory.com is
+  behind Google IAP (302 to accounts.google.com).
+hosts:
+  - host: https://www.welltheory.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 200
+        type: text/plain
+        file: ../llms/welltheory-llms.txt
+  - host: https://api.welltheory.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404

@@ -1,8 +1,26 @@
 aid: welltheory
 name: WellTheory
-description: 'WellTheory is a company surfaced as a portfolio company of accel, general-catalyst and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  WellTheory is a virtual autoimmune care platform that provides whole-person
+  support for people living with autoimmune and inflammatory conditions,
+  pairing members with a dedicated care team for nutrition, lifestyle, and
+  clinical guidance across more than 100 conditions. The company sells to
+  employers and health plans as a covered benefit as well as direct to
+  consumers, and is backed by Accel and General Catalyst. WellTheory publishes
+  no public developer API surface today; its api.welltheory.com backend and
+  docs are private/internal.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/606b0c58344d153f2b31bfef/68a77b8abd91f6feb3dbaadb_c94534d424d4a74215953176bddc17bd_Global%20Meta%20Image.jpg
 url: https://raw.githubusercontent.com/api-evangelist/welltheory/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Healthcare
+- Autoimmune
+- Telehealth
+- Digital Health
+- Employee Benefits
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +49,26 @@ maintainers:
 common:
 - type: Website
   url: https://www.welltheory.com/
+- type: Blog
+  url: https://www.welltheory.com/resources
+- type: PrivacyPolicy
+  url: https://www.welltheory.com/terms/privacy-policy
+- type: TermsOfService
+  url: https://www.welltheory.com/terms/terms-and-conditions
+- type: Login
+  url: https://app.welltheory.com/
+- type: Support
+  url: mailto:support@welltheory.com
+- type: GitHubOrganization
+  url: https://github.com/welltheory
+- type: LLMsTxt
+  url: llms/welltheory-llms.txt
+- type: WellKnown
+  url: well-known/welltheory-well-known.yml
+- type: DomainSecurity
+  url: security/welltheory-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
